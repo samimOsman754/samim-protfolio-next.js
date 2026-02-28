@@ -27,7 +27,7 @@ const Nav = ({ openNav }: Props) => {
     >
       <div className="flex items-center h-full justify-between w-[90%] mx-auto">
         {/* Logo */}
-        <Link href="#home">
+        <Link href="#">
           <div className="flex items-center space-x-2">
             <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center flex-col">
               <FaCode className="w-5 h-5 text-black" />

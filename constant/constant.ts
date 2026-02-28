@@ -6,7 +6,7 @@ import WebAgencyApp from "@/public/images/WebAgency.png";
 export const NavLinks = [
   {
     id: 1,
-    url: "#home",
+    url: "#",
     label: "Home",
   },
   {
