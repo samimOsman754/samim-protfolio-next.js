@@ -4,7 +4,10 @@ import NewsPortal from "@/public/images/NewsPortal.png";
 import FullStackBlogApp from "@/public/images/Full-Stack-Blog-App.png";
 import FurnitureApp from "@/public/images/PantoFurniture.png";
 import WebAgencyApp from "@/public/images/WebAgency.png";
+import LandingApp from "@/public/images/Landing-App.png";
+import NextWebAgency from "@/public/images/Next.js-Web-Agency.png";
 
+// Nav Links
 export const NavLinks = [
   {
     id: 1,
@@ -46,30 +49,24 @@ export const NavLinks = [
 export const ProjectsData = [
   {
     id: 1,
-    title: "AI Chat App",
+    title: "Web Code Agency",
     description:
-      "The website is a simple AI chatbot application that allows users to send messages and receive AI-generated responses in real time. It has a clean, minimal interface, runs directly in the browser, and is mainly used for learning, testing, or showcasing AI integration in web development.",
-    technologies: [
-      "Next.js",
-      "TypeScript",
-      "OpenRouter",
-      "Tailwind CSS",
-      "Shadcn/UI",
-      "Clerk",
-    ],
-    image: AiChatApp,
-    liveUrl: "https://ai-chat-app-six-chi.vercel.app/",
-    githubUrl: "https://github.com/samimOsman754/AI-Chat-App",
+      "Web Code Agency is a modern and visually engaging landing page designed for a fictional digital agency or freelance development team. Built using React and Tailwind CSS, the project showcases a clean, responsive, and mobile-friendly interface with smooth animations and structured sections.",
+    technologies: ["JavaScript", "React", "Tailwind CSS"],
+    image: WebAgencyApp,
+    liveUrl: "https://web-code-agency-one.vercel.app/",
+    githubUrl: "https://github.com/samimOsman754/web-code-agency",
   },
   {
     id: 2,
-    title: "ZEGOCLOUD Video Call App",
+    title: "Furniture App",
     description:
-      "The ZEGOCLOUD Video Call App is a real-time video communication application built with Next.js and TypeScript. It leverages the ZEGOCLOUD SDK to provide high-quality video calling features, including one-on-one and group calls. The app features a user-friendly interface styled with Tailwind CSS, allowing users to easily connect and communicate.",
-    technologies: ["Next.js", "TypeScript", "ZEGOCLOUD", "Tailwind CSS"],
-    image: ZegocloudApp,
-    liveUrl: "https://zegocloud-video-app.vercel.app/",
-    githubUrl: "https://github.com/samimOsman754/zegocloud_video_app",
+      "This is a modern, responsive e-commerce web application for a furniture store built using React.js. The site showcases a clean and minimal design that highlights various furniture products with intuitive navigation and user-friendly interactions.",
+    technologies: ["JavaScript", "React", "Tailwind CSS"],
+    image: FurnitureApp,
+    liveUrl: "https://furniture-site-react.vercel.app/",
+    githubUrl:
+      "https://github.com/samimOsman754/furniture-site-react/tree/main",
   },
   {
     id: 3,
@@ -100,27 +97,62 @@ export const ProjectsData = [
   },
   {
     id: 5,
-    title: "Web Code Agency",
+    title: "AI Chat App",
     description:
-      "Web Code Agency is a modern and visually engaging landing page designed for a fictional digital agency or freelance development team. Built using React and Tailwind CSS, the project showcases a clean, responsive, and mobile-friendly interface with smooth animations and structured sections.",
-    technologies: ["JavaScript", "React", "Tailwind CSS"],
-    image: WebAgencyApp,
-    liveUrl: "https://web-code-agency-one.vercel.app/",
-    githubUrl: "https://github.com/samimOsman754/web-code-agency",
+      "The website is a simple AI chatbot application that allows users to send messages and receive AI-generated responses in real time. It has a clean, minimal interface, runs directly in the browser, and is mainly used for learning, testing, or showcasing AI integration in web development.",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "OpenRouter",
+      "Tailwind CSS",
+      "Shadcn/UI",
+      "Clerk",
+    ],
+    image: AiChatApp,
+    liveUrl: "https://ai-chat-app-six-chi.vercel.app/",
+    githubUrl: "https://github.com/samimOsman754/AI-Chat-App",
   },
   {
     id: 6,
-    title: "Furniture App",
+    title: "ZEGOCLOUD Video Call App",
     description:
-      "This is a modern, responsive e-commerce web application for a furniture store built using React.js. The site showcases a clean and minimal design that highlights various furniture products with intuitive navigation and user-friendly interactions.",
-    technologies: ["JavaScript", "React", "Tailwind CSS"],
-    image: FurnitureApp,
-    liveUrl: "https://furniture-site-react.vercel.app/",
-    githubUrl:
-      "https://github.com/samimOsman754/furniture-site-react/tree/main",
+      "The ZEGOCLOUD Video Call App is a real-time video communication application built with Next.js and TypeScript. It leverages the ZEGOCLOUD SDK to provide high-quality video calling features, including one-on-one and group calls. The app features a user-friendly interface styled with Tailwind CSS, allowing users to easily connect and communicate.",
+    technologies: ["Next.js", "TypeScript", "ZEGOCLOUD", "Tailwind CSS"],
+    image: ZegocloudApp,
+    liveUrl: "https://zegocloud-video-app.vercel.app/",
+    githubUrl: "https://github.com/samimOsman754/zegocloud_video_app",
+  },
+  {
+    id: 7,
+    title: "Landing App in Next.js",
+    description:
+      "Built a high-performance landing page application with Next.js and Tailwind CSS, focusing on responsive design, component reusability, SEO best practices, and modern UI/UX principles. The project demonstrates proficiency in front-end development, performance optimization, and scalable web application architecture.",
+    technologies: ["Next.js", "React", "Tailwind CSS", "TypeScript", "AOS"],
+    image: LandingApp,
+    liveUrl: "https://next-landing-app.vercel.app/",
+    githubUrl: "https://github.com/samimOsman754/next-landing-app",
+  },
+  {
+    id: 8,
+    title: "Web agency in Next.js",
+    description:
+      "Developed a modern and responsive web agency website using Next.js, React, and Tailwind CSS. The project focuses on delivering a professional digital presence for agencies, featuring clean UI/UX design, fast performance, SEO-friendly architecture, and mobile-first responsiveness. Leveraging Next.js capabilities such as optimized routing and server-side rendering, the website ensures improved user experience and search engine visibility. The platform includes service showcases, project portfolios, client engagement sections, and a scalable component-based architecture for easy maintenance and future expansion.",
+    technologies: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "TypeScript",
+      "AOS",
+      "React-type-animation",
+      "React-parallax-tilt",
+    ],
+    image: NextWebAgency,
+    liveUrl: "https://next-js-web-agency.vercel.app/",
+    githubUrl: "https://github.com/samimOsman754/next.js-web-agency",
   },
 ];
 
+// Contact section
 export const ContactInfo = {
   phone: "+8801637657587",
   email: "samimosman812@gmail.com",
@@ -130,6 +162,7 @@ export const ContactInfo = {
     "Let's have a conversation about how I can help move your project forward.",
 };
 
+// Socile Link
 export const SocialLinks = [
   {
     id: 1,
