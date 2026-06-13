@@ -31,7 +31,7 @@ export default function ParticlesHero() {
   const options: ISourceOptions = useMemo(
     () => ({
       background: {
-        color: { value: "transparent" }, // Transparent for overlay use
+        color: { value: "transparent" },
       },
       fullScreen: {
         enable: false,
@@ -39,12 +39,14 @@ export default function ParticlesHero() {
       fpsLimit: 120,
       interactivity: {
         events: {
-          onClick: { enable: true, mode: "push" },
-          onHover: { enable: true, mode: "attract" },
+          onClick: { enable: true, mode: "repulse" },
+          onHover: { enable: true, mode: "connect" },
         },
         modes: {
-          push: { quantity: 8 },
-          attract: { distance: 150, duration: 0.4 },
+          repulse: { distance: 200, duration: 0.4 },
+          connect: { distance: 150, links: { opacity: 0.8 }, radius: 150 },
+          push: { quantity: 10 },
+          attract: { distance: 200, duration: 0.4 },
         },
       },
       particles: {
@@ -53,35 +55,50 @@ export default function ParticlesHero() {
         },
         links: {
           color: "#00d4ff",
-          distance: 200,
+          distance: 250,
           enable: true,
-          opacity: 0.6,
-          width: 1.5,
+          opacity: 0.5,
+          width: 1.2,
+          frequency: 0,
+          consent: false,
+          triangles: {
+            enable: false,
+            frequency: 0,
+          },
         },
         move: {
           direction: MoveDirection.none,
           enable: true,
           outModes: { default: OutMode.bounce },
-          speed: 1.5,
+          speed: 0.8,
           acceleration: 0.1,
-          deceleration: 0.1,
+          deceleration: 0.08,
+          spin: {
+            enable: true,
+            acceleration: 0.02,
+          },
         },
         number: {
-          density: { enable: true, area: 800 },
-          value: 80,
+          density: { enable: true, area: 900 },
+          value: 100,
         },
         opacity: {
-          value: { min: 0.3, max: 0.8 },
-          animation: { enable: true, speed: 1, sync: false },
+          value: { min: 0.4, max: 0.9 },
+          animation: {
+            enable: true,
+            speed: 0.7,
+            sync: false,
+            startValue: "random",
+          },
         },
         shape: { type: "circle" },
         size: {
-          value: { min: 2, max: 6 },
-          animation: { enable: true, speed: 2, sync: false },
+          value: { min: 1.5, max: 4 },
+          animation: { enable: true, speed: 1.2, sync: false },
         },
         twinkle: {
-          lines: { enable: true, frequency: 0.05, opacity: 0.5 },
-          particles: { enable: true, frequency: 0.05, opacity: 0.5 },
+          lines: { enable: true, frequency: 0.08, opacity: 0.6 },
+          particles: { enable: true, frequency: 0.08, opacity: 0.6 },
         },
       },
       detectRetina: true,

@@ -8,6 +8,8 @@ import {
   SiReact,
   SiTailwindcss,
   SiTypescript,
+  SiExpress,
+  SiMongoose,
 } from "react-icons/si";
 import Tilt from "react-parallax-tilt";
 
@@ -46,6 +48,16 @@ const skills = [
     name: "MongoDB",
     icon: <SiMongodb />,
     percentage: 85,
+  },
+  {
+    name: "Express.js",
+    icon: <SiExpress />,
+    percentage: 90,
+  },
+  {
+    name: "Mongoose",
+    icon: <SiMongoose />,
+    percentage: 92,
   },
 ];
 
